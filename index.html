@@ -37,184 +37,178 @@
     }
   </style>
   <body>
-    <nav class="navbar navbar-light bg-light">
-      <div class="container d-flex justify-content-between">
-        <a class="navbar-brand" href="#">
-          <img
-            src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
-            alt="Tripadvisor"
-            width="200"
-            height="60"
-          />
-        </a>
-        <form style="margin-right: 15rem" class="w-25 h-50">
-          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
-          <input
-            class="form-control me-2 rounded-pill"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-        </form>
-        <div
-          class="d-flex justify-content-between justify-content-center align-items-center me-4"
-          style="width: 22rem"
-        >
-          <li class="fw-bold" style="list-style: none">Discover</li>
-          <li class="fw-bold" style="list-style: none">Trips</li>
-          <li class="fw-bold" style="list-style: none">Review</li>
-          <li class="fw-bold" style="list-style: none">
-            <i class="fa-solid fa-globe"></i> USD
-          </li>
-          <button class="bg-dark text-light rounded-pill border-0 p-2">
-            Sign In
-          </button>
-        </div>
-      </div>
-    </nav>
-
-    <nav>
-      <div
-        class="container d-flex justify-content-between w-50"
-        style="list-style: none"
-      >
-        <li class="fw-bold hover" style="cursor: pointer">Hotels</li>
-        <li class="fw-bold hover" style="cursor: pointer">Things to Do</li>
-        <li class="fw-bold hover" style="cursor: pointer">Restaurants</li>
-        <li class="fw-bold hover" style="cursor: pointer">Flights</li>
-        <li class="fw-bold hover" style="cursor: pointer">Vacation Rentals</li>
-      </div>
-    </nav>
-
-    <div class="backG my-4">
-      <h1 class="text-light text-center fw-bold" style="padding-top: 10rem">
-        Latest reviews. Lowest prices.
-      </h1>
-      <form style="width: 40rem; margin-left: 20rem">
-        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+    <!-- Navbar -->
+  <nav class="navbar navbar-light bg-light">
+    <div class="container d-flex justify-content-between">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+          alt="Tripadvisor"
+          width="200"
+          height="60"
+        />
+      </a>
+      <form class="w-25 h-50">
         <input
-          class="form-control me-2 rounded-pill p-3"
+          class="form-control me-2 rounded-pill"
           type="search"
-          placeholder="Hotel name or destination"
+          placeholder="Search"
           aria-label="Search"
         />
       </form>
+      <div class="d-flex align-items-center">
+        <ul class="navbar-nav flex-row me-4" style="gap: 1rem;">
+          <li class="nav-item fw-bold">Discover</li>
+          <li class="nav-item fw-bold">Trips</li>
+          <li class="nav-item fw-bold">Review</li>
+          <li class="nav-item fw-bold">
+            <i class="fa-solid fa-globe"></i> USD
+          </li>
+        </ul>
+        <button class="btn btn-dark rounded-pill">Sign In</button>
+      </div>
     </div>
+  </nav>
 
+  <!-- Secondary Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
     <div class="container">
-      <h3>You might like these</h3>
-      <p>More places to stay in Gramado</p>
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item fw-bold hover"><a href="#" class="nav-link">Hotels</a></li>
+        <li class="nav-item fw-bold hover"><a href="#" class="nav-link">Things to Do</a></li>
+        <li class="nav-item fw-bold hover"><a href="#" class="nav-link">Restaurants</a></li>
+        <li class="nav-item fw-bold hover"><a href="#" class="nav-link">Flights</a></li>
+        <li class="nav-item fw-bold hover"><a href="#" class="nav-link">Vacation Rentals</a></li>
+      </ul>
+    </div>
+  </nav>
 
-      <div class="hotel d-flex">
-        <div class="me-3">
-          <div class="card" style="width: 16rem; border: none">
-            <img
-              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/c6/f1/9d/vista-do-hotel.jpg?w=600&h=600&s=1"
-              class="card-img-top rounded-bottom"
-              alt="..."
-            />
-            <h5 class="card-title fs-6 p-1 fw-bold">
-              Hotel Estalagem St Hubertus
-            </h5>
-          </div>
+  <!-- Header Section -->
+  <div class="backG my-4 text-center text-light">
+    <h1 class="fw-bold" style="padding-top: 10rem">
+      Latest reviews. Lowest prices.
+    </h1>
+    <form class="mx-auto" style="width: 40rem;">
+      <input
+        class="form-control me-2 rounded-pill p-3"
+        type="search"
+        placeholder="Hotel name or destination"
+        aria-label="Search"
+      />
+    </form>
+  </div>
+
+  <!-- Recommendations Section -->
+  <div class="container">
+    <h3>You might like these</h3>
+    <p>More places to stay in Gramado</p>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card border-0">
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/c6/f1/9d/vista-do-hotel.jpg?w=600&h=600&s=1"
+            class="card-img-top rounded-bottom"
+            alt="Hotel Estalagem St Hubertus"
+          />
+          <h5 class="card-title fs-6 p-1 fw-bold">Hotel Estalagem St Hubertus</h5>
         </div>
-
-        <div class="me-3">
-          <div class="card" style="width: 16rem; border: none">
-            <img
-              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/6c/aa/bc/hotel-valle-d-incanto.jpg?w=600&h=600&s=1"
-              class="card-img-top rounded-bottom"
-              alt="..."
-            />
-            <h5 class="card-title fs-6 p-1 fw-bold">Hotel Valle D’Incanto</h5>
-          </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card border-0">
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/6c/aa/bc/hotel-valle-d-incanto.jpg?w=600&h=600&s=1"
+            class="card-img-top rounded-bottom"
+            alt="Hotel Valle D’Incanto"
+          />
+          <h5 class="card-title fs-6 p-1 fw-bold">Hotel Valle D’Incanto</h5>
         </div>
-
-        <div class="me-3">
-          <div class="card" style="width: 16rem; border: none">
-            <img
-              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/20/16/84/hotel-casa-da-montanha.jpg?w=600&h=600&s=1"
-              class="card-img-top rounded-bottom"
-              alt="..."
-            />
-            <h5 class="card-title fs-6 p-1 fw-bold">Hotel Casa da Montanha</h5>
-          </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card border-0">
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/20/16/84/hotel-casa-da-montanha.jpg?w=600&h=600&s=1"
+            class="card-img-top rounded-bottom"
+            alt="Hotel Casa da Montanha"
+          />
+          <h5 class="card-title fs-6 p-1 fw-bold">Hotel Casa da Montanha</h5>
         </div>
-
-        <div class="me-3">
-          <div class="card" style="width: 16rem; border: none">
-            <img
-              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/1f/78/b4/hotel-ritta-hoppner.jpg?w=600&h=600&s=1"
-              class="card-img-top rounded-bottom"
-              alt="..."
-            />
-            <h5 class="card-title fs-6 p-1 fw-bold">Hotel Ritta Höppner</h5>
-          </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card border-0">
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/1f/78/b4/hotel-ritta-hoppner.jpg?w=600&h=600&s=1"
+            class="card-img-top rounded-bottom"
+            alt="Hotel Ritta Höppner"
+          />
+          <h5 class="card-title fs-6 p-1 fw-bold">Hotel Ritta Höppner</h5>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="container mt-5">
-      <h3 class="pb-3">Travelers’ Choice: Top hotels</h3>
-
-      <div class="hotel d-flex">
-        <div class="me-3">
-          <div class="card" style="width: 16rem; border: none">
-            <img
-              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/20/5a/17/rambagh-palace-exterior.jpg?w=600&h=600&s=1"
-              class="card-img-top rounded-bottom"
-              alt="..."
-            />
-            <h5 class="card-title fs-6 p-1 fw-bold">
-              Hotel Estalagem St Hubertus
-            </h5>
-          </div>
+  <!-- Travelers' Choice Section -->
+  <div class="container mt-5">
+    <h3 class="pb-3">Travelers’ Choice: Top hotels</h3>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card border-0">
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/20/5a/17/rambagh-palace-exterior.jpg?w=600&h=600&s=1"
+            class="card-img-top rounded-bottom"
+            alt="Hotel Estalagem St Hubertus"
+          />
+          <h5 class="card-title fs-6 p-1 fw-bold">Hotel Estalagem St Hubertus</h5>
         </div>
-
-        <div class="me-3">
-          <div class="card" style="width: 16rem; border: none">
-            <img
-              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/b9/35/dc/ozen-reserve-bolifushi.jpg?w=600&h=600&s=1"
-              class="card-img-top rounded-bottom"
-              alt="..."
-            />
-            <h5 class="card-title fs-6 p-1 fw-bold">Hotel Valle D’Incanto</h5>
-          </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card border-0">
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/b9/35/dc/ozen-reserve-bolifushi.jpg?w=600&h=600&s=1"
+            class="card-img-top rounded-bottom"
+            alt="Hotel Valle D’Incanto"
+          />
+          <h5 class="card-title fs-6 p-1 fw-bold">Hotel Valle D’Incanto</h5>
         </div>
-
-        <div class="me-3">
-          <div class="card" style="width: 16rem; border: none">
-            <img
-              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/b9/35/dc/ozen-reserve-bolifushi.jpg?w=600&h=600&s=1"
-              class="card-img-top rounded-bottom"
-              alt="..."
-            />
-            <h5 class="card-title fs-6 p-1 fw-bold">Hotel Casa da Montanha</h5>
-          </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card border-0">
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/b9/35/dc/ozen-reserve-bolifushi.jpg?w=600&h=600&s=1"
+            class="card-img-top rounded-bottom"
+            alt="Hotel Casa da Montanha"
+          />
+          <h5 class="card-title fs-6 p-1 fw-bold">Hotel Casa da Montanha</h5>
         </div>
-
-        <div class="me-3">
-          <div class="card" style="width: 16rem; border: none">
-            <img
-              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c2/97/1e/caption.jpg?w=600&h=600&s=1"
-              class="card-img-top rounded-bottom"
-              alt="..."
-            />
-            <h5 class="card-title fs-6 p-1 fw-bold">Hotel Ritta Höppner</h5>
-          </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="card border-0">
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c2/97/1e/caption.jpg?w=600&h=600&s=1"
+            class="card-img-top rounded-bottom"
+            alt="Hotel Ritta Höppner"
+          />
+          <h5 class="card-title fs-6 p-1 fw-bold">Hotel Ritta Höppner</h5>
         </div>
       </div>
     </div>
-    <hr class="mt-4" />
-    <footer class="blog-footer">
-      <p class="text-center mt-5">
-        Blog template built for
-        <a href="https://getbootstrap.com/">Bootstrap</a> by
-        <a href="https://twitter.com/mdo">@mdo</a>.
-      </p>
-      <p class="text-center">
-        <a href="#">Back to top</a>
-      </p>
-    </footer>
+  </div>
+
+  <!-- Footer -->
+  <hr class="mt-4" />
+  <footer class="blog-footer">
+    <p class="text-center mt-5">
+      Blog template built for
+      <a href="https://getbootstrap.com/">Bootstrap</a> by
+      <a href="https://twitter.com/mdo">@mdo</a>.
+    </p>
+    <p class="text-center">
+      <a href="#">Back to top</a>
+    </p>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn
   </body>
 </html>
